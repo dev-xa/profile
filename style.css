@@ -1,0 +1,115 @@
+/* Responsive Dev Resume - Kim Galicia */
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+.sidebar {
+  width: 25%;
+  background-color: #252526;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 2px solid #333;
+}
+.main {
+  width: 75%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.profile-pic {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #444;
+}
+.section {
+  margin-bottom: 20px;
+}
+.section h3 {
+  color: #569cd6;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #444;
+}
+.section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.section li {
+  color: #dcdcaa;
+  margin-bottom: 4px;
+}
+.sidebar a {
+  color: #9cdcfe;
+  text-decoration: none;
+  word-break: break-word;
+}
+.block {
+  margin-bottom: 30px;
+}
+.type {
+  color: #4ec9b0;
+}
+.string {
+  color: #ce9178;
+}
+.number {
+  color: #b5cea8;
+}
+.bool {
+  color: #569cd6;
+}
+.comment {
+  color: #6a9955;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+}
+.blue {
+  color: #569cd6;
+}
+.link {
+  color: #9cdcfe;
+  text-decoration: none;
+}
+.function {
+  color: #dcdcaa;
+}
+/* Responsive */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #333;
+  }
+  .main {
+    width: 100%;
+    padding: 20px;
+  }
+  .profile-pic {
+    max-width: 200px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    padding: 15px;
+  }
+  .block {
+    font-size: 14px;
+  }
+  .sidebar {
+    padding: 15px;
+  }
+  .section li {
+    font-size: 14px;
+  }
+}
